@@ -1,0 +1,295 @@
+
+/* table*/
+.dash-table {
+    margin-top: 50px;
+}
+
+.dash-table .search {
+    text-align: right;
+    padding: 0;
+}
+
+.dash-table .heading {
+    padding: 0;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.dash-table .searchbar {
+    float: left;
+    margin-left: 120px;
+    width: 320px;
+    height: 40px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+}
+
+.dash-table .searchbar .search-box img {
+    /*    padding-top: 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dash-table .searchbar .search-box input {
+    margin-top: 8px;
+    width: 86%;
+    border: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+
+.dash-table .booktable {
+    margin-top: 20px;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 20px;
+}
+
+.dash-table .booktable .table tr {
+    height: 60px;
+}
+
+.dash-table .booktable .table tr:hover {
+    background: none;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dash-table .booktable .table thead:hover tr {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.dash-table .booktable .table thead {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.dash-table .booktable .table tbody td {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.dash-table .booktable .table .eyeimg {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+    color: #aaaaaa;
+    padding-left: 10px;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
+
+.table {
+    margin-bottom: 0px;;
+}
+
+.table .purple_text{
+    color: #6255a5 !important;
+}
+
+
+#dropadmin{
+    margin-top: -25px;
+    margin-left: 50%;
+}
+#dropadmin1{
+    margin-left:-50px;
+    margin-top: -21px;
+    
+}
+#logout-dash{
+    color:#6255a5;
+    font-weight: 600;
+}
+#addaus{
+    margin-top: -8px;
+    margin-right: 10px;
+}
+th{
+text-align:;}
+td{
+    text-align: cr;
+    position: relative;
+}
+.mainheading{
+    margin-top: 60px;
+    color:#6255a5;
+}
+#firstdash{
+    text-align: center;
+    width: 430px;
+    height: 151px;
+    
+    border: 1px solid #d1d1d1;
+     
+}
+#firstdash p{
+    padding-top: 15px;
+   
+    
+}
+#firstdash{
+    margin-left: 20px;
+    min-width: 0%;
+     
+}
+#firstdash h2{
+     color:#6255a5;
+    padding-top: 30px;
+   
+    
+}
+.col-md-4{
+    
+  
+  
+    
+}
+#textp{
+    margin-top: -20px;
+}
+
+
+/*Admin Dashboasrd*/
+
+#pric{
+     text-align: center;
+}
+
+#dot11{
+    padding-right:30px;
+    
+}
+
+
+
+
+
+/* drop down*/
+
+
+.dropbtn {
+    background-color: #fff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+
+    background-color: #f9f9f9;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+
+
+
+@media(min-width:576px){
+    #serchba{
+        margin-top: 
+    }
+}
+    @media(max-width:767px) {
+            #serchba form {
+                margin-left: -130px;
+                margin-top: -8px;
+                margin-top: 20px;
+                
+                float: left;
+            }
+        #membertext{
+            margin-bottom: 10px;
+           text-align: center;
+        }
+        #setselect{
+}
+        
+        
+
+            .footer p {
+                text-align: center;
+
+            }
+
+            .footer #version {
+                margin-left: 15px;
+
+            }
+        }
+    @media(min-width: 768px) and (max-width: 992px){
+         #membertext {
+            margin-bottom: -100px;
+             margin-bottom: -100px;
+             
+        }
+        #serchba form{
+            margin-top: -100px;
+            margin-left: 100px;
+        }
+        #serchba {
+                margin-left: 
+                margin-top: 100px;
+                margin-top: 40px;
+                
+                float: right;
+            margin-left: -10px;
+            }
+        #allserch{
+        margin-left: -100px;
+            margin-right: -100px;
+            padding-right: 20px;
+            padding-left: 0px;
+        }
+    }
+    

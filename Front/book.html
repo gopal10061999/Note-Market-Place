@@ -1,0 +1,420 @@
+<html>
+
+<head>
+    
+    <title>Notes Market Place</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   
+   
+    <link rel="stylesheet" href="css/bootsharp/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
+    <link rel="stylesheet" href="css/book.css">
+
+    <link rel="stylesheet" href="css/thanks.css">
+    
+     <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/addnote.css">
+    <style type="text/css">
+        setd {
+            float: right;
+        }
+        #ri{
+            color: #6255a5;
+        }
+        #s1{
+            padding-top: 8px;
+        }
+        #textnote{
+            
+            color: #6255a5;
+            font-weight: 500px;
+}
+        @media(max-width:767px) {
+            #bookviews-right {
+
+                margin-top: 400px;
+                color: red;
+            }
+
+            #right-side {
+
+                float: left;
+                margin-top: 450px;
+                margin-left: -500px;
+            }
+
+            nav {
+                width: 800px;
+                ;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light white-nav-top bg-white sticky-top" >
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="images/top-logo1.png" id="toplogo" style="width: 220px; height: 40px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate-top" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                   
+                  <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 550; min-width:130px;
+                           color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           Search Notes
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-fade-up" href="" style="font-weight: 550;
+                          font-size: 13x;color: black; min-width: 148px;" >Sell Your Notes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 550;
+                         font-size: 13px;
+                          color: black; min-width: 137px;">Buyer Requests</a>
+                    </li>
+
+
+                   
+           
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weigh:550; font-size:13px; color: black;">
+                        FAQ
+                   </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 700;
+                          font-size: 13px;color: black; min-width: 101px;">Contact Us
+                   </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle " style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           <img src="images/user-img.png" id="addaus">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin1">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Update Profile</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Change Password</a>
+                            
+                            <a class="dropdown-item nav-link-fade-up" href="#" id="logout-dash">
+                            LOGOUT</a>
+                            
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="nav-item" id="bbttnn">
+                        <a href="#"><button type="button" class="btn btn-primary btn_login">Login</button></a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+   
+
+   
+    
+    <section>
+
+   
+   <section>
+       <div class="container">
+       <div class="row">
+          <h3 id="textnote" style="margin-top: 50px;"> Notes Details</h3>
+       </div>
+       
+       </div>
+   </section>
+   
+    <section id="book-info">
+        <div class="container">
+            <div class="col-md-12 col-sm-12 col-xl-12">
+
+                <div class="row">
+                    <div id="book-img" class="col-md-12 col-sm-12 col-xs-12 col-xl-3">
+                        <div id="left">
+                            
+                                 <img src="images/computer-science.png" id="combook" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xl-8" id="left-side">
+                        <div id="right" class="col-md-10 col-sm-10 col-xs-12" style="max-width: 340px;">
+                            <h3>Computer Science</h3>
+                            <h4>Sciences</h4>
+                            <p style="min-width: 250px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusamus numquam nemo blanditiis. Modi quo amet soluta, delectus qui velit veniam dolores, deleniti minima. Eveniet tempora voluptates, autem veniam nemo!</p>
+                            <a class="btn" href="#popup1" role="button" id="download-btn">DOWNLOAD / $15</a>
+
+
+
+
+
+
+
+                        </div>
+
+
+                   
+
+
+
+
+
+
+
+                        <div id="popup1" class="overlay" style="min-width:5px;">
+                            <div class="popup" style="min-width:300px;">
+
+                                <a class="close" href="#">&times;</a>
+                                <div class="content text-center">
+                                    <img src="images/SUCCESS.png">
+
+                                    <h2 class="headthx">Thank you for purchasing</h2>
+
+                                    <p id="textthx">Dear Smith,</p>
+                                    <p id="text1thx"> As this is paid notes-you need to pay to seller rahil shah<br>
+                                        offline.we will send him an email that you want to dowanload<br>
+                                        this note. He may contact youy further for payment process<br> completion.
+                                    </p>
+
+                                    <p id="textthx2">In case, you have urgency.</p>
+                                    <p id="text2thx"> Please contact us on +918320633601.</p>
+
+                                    <p id="text3thx">Once he receives the payment and ackhowledge us-selected<br>notes you can see over my downloads tab for download.</p>
+
+                                    <p id="text4thx">Have a good day.</p>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+        
+                        <div class="col-md-4 col-sm-4 col-xl-4" id="riht-side">
+                           
+                            <table id="setwidth">
+                               <div class="container">
+                                <tr>
+                                    <td>
+                                        <h6>Institution :</h6>
+                                    </td>
+                                    <td id="ri"><p>University of California</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Country :</h6>
+                                    </td>
+                                    <td id="ri">
+                                        <p>United States</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Course Name :</h6>
+                                    </td>
+                                    <td id="ri">
+                                        <p>Coumputer Engineering</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Course Code :</h6>
+                                    </td>
+                                    <td id="ri">
+                                        <p>248705</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Professor :</h6>
+                                    </td>
+                                    <td>
+                                        <p id="ri">Mr. Richard Brown</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Approved Date :</h6>
+                                    </td>
+                                    <td id="ri">
+                                        <p>Nov 25 2020</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Rating :</h6>
+                                    </td>
+                                    <td id="ri">
+                                        <div class="row" id="sestar">
+                                            <p><img src="images/star.png" id="sizestar"><img src="images/star.png" id="sizestar"><img src="images/star.png" id="sizestar"><img src="images/star.png" id="sizestar"><img src="images/star.png" id="sizestar">100 ratings</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </div>
+                            </table>
+                            
+                        </div>
+                         </div>
+                       
+                    </div>
+
+
+                </div>
+
+
+        </div>
+
+        
+
+
+    </section>
+
+
+    <section id="bookview">
+        <h2>Notes Preview and Custom Previews</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 bookview-left">
+
+
+                    <div id="Iframe-Cicis-Menu-To-Go" class="set-margin-cicis-menu-to-go set-padding-cicis-menu-to-go set-border-cicis-menu-to-go set-box-shadow-cicis-menu-to-go center-block-horiz">
+                        <div class="responsive-wrapper responsive-wrapper-padding-bottom-90pct" style="-webkit-overflow-scrolling: touch; overflow: auto;">
+
+                            <iframe src="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf">
+                                <p style="font-size: 110%;"><em><strong>ERROR: </strong>
+                                        An &#105;frame should be displayed here but your browser version does not support &#105;frames.</em> Please update your browser to its most recent version and try again, or access the file <a href="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf">with this link.</a></p>
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12" id="bookviews-right">
+                    <div class="review-container">
+                        <table>
+                            <tr>
+                                <td><img src="images/reviewer-1.png"></td>
+                                <td>
+                                    <div class="user-review">
+                                        <p>Richard Brown</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repellat asperiores nisi dignissimos pariatur dolor quis ut beatae, totam quos. Possimus facere impedit similique nobis at a dolores veritatis perspiciatis?</h6>
+                    </div>
+                    <div class="review-container">
+                        <table>
+                            <tr>
+                                <td><img src="images/reviewer-2.png"></td>
+                                <td>
+                                    <div class="user-review">
+                                        <p>Alis Ortiaz</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repellat asperiores nisi dignissimos pariatur dolor quis ut beatae, totam quos. Possimus facere impedit similique nobis at a dolores veritatis perspiciatis?</h6>
+                    </div>
+                    <div class="review-container">
+                        <table>
+                            <tr>
+                                <td><img src="images/reviewer-3.png"></td>
+                                <td>
+                                    <div class="user-review">
+                                        <p>Sara Martin</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repellat asperiores nisi dignissimos pariatur dolor quis ut beatae, totam quos. Possimus facere impedit similique nobis at a dolores veritatis perspiciatis?</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--    footer  -->
+    <section class="footer">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-6 footer_content">
+                    <p>Copyright © <a href="https://www.tatvasoft.com">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 footer_social text-right">
+                    <ul class="social-list">
+                        <li><a href="#" id="s1">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#" id="s1">
+                                <i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li><a href="#" id="s1">
+                                <i class="fa fa-google-plus"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/bootsharp/bootstrap.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

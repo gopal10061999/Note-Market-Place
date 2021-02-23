@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Notes Market Place</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+   
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/addnote.css">
+
+     <link rel="stylesheet" href="css/usr.css">
+
+
+<style type="text/css">
+   
+   
+    .descri2{
+          
+            min-height: 275px;
+            padding-bottom: 230px;
+           
+        }
+   
+    #imgda{
+        float: right;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -40px;
+    }
+     select{
+        height: 50px;
+       width: 160%;
+        margin-left: -15px;
+        margin-right: 10px;
+    
+       
+    }
+    .promob{
+        margin-left : 10px;
+        width: 100%;
+        
+        
+        
+    }
+    .propic{
+        margin-top: 75px;
+    }
+    select{
+        margin-left: 4px;
+    }
+    #publishbtn
+{
+margin-top: 40px;
+margin-bottam:40px;
+
+}
+    @media(max-width:767px){
+        .social-list{
+            text-align: center;
+        }
+        .footer_content{
+            text-align: center;
+        }
+    }
+    
+   
+    
+    </style>
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-light white-nav-top bg-white sticky-top" >
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="images/top-logo1.png" id="toplogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate-top" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                   
+                  
+                   <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           Search Notes
+                        </a>
+                       
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-fade-up" href="" style="font-weight: 600; color: black;">Sell your Notes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">FAQ</a>
+                    </li>
+
+
+                   
+           
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Contact Us
+                   </a>
+                    </li>
+                   
+                    
+                    
+                    <li class="nav-item" id="bbttnn">
+                        <a href="#"><button type="button" class="btn btn-primary btn_login">Login</button></a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    <section id="setimg">
+        <img src="images/banner.jpg" class="banner">
+        <h3 class="se" id="sf"><b>Contact Us</b></h3>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="ba">
+                    Get In Touch
+                    
+                </h2>
+
+            </div>
+                            <p id="setparagraph" style="margin-top: 20px; margin-left: -10px; margin-bottom: -10px">Let's us know how to get back to you</p>
+        </div>
+    </section>
+
+    <section id="upperbasic">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12" id="basic1">
+                    <p class="finat">Full Name *</p>
+                    <input type="text" name="full-name" value="" placeholder="Enter your full name" class="basicc1" required id="basici1">
+                    
+                    <p class="finat">Email Address*</p>
+                    <input type="text" name="full-name" value="" placeholder="Enter your email address" class="basicc1" required id="basici1">
+
+                   <p class="finat">Subject</p>
+                   <input type="text" name="full-name" value="" placeholder="Enter your Subject" class="basicc1" required id="basici1">
+
+                   
+                   
+
+
+
+                </div>
+                <div class="col-md-6 col-sm-12" id="basic1">
+                    
+                     <p class="finat">Description *</p>
+                     
+                    
+                    <input type="text" name="full-name" value="" placeholder="Enter your description" class="descri2" required id="basici1">
+                </div>
+
+                
+
+                </div>
+                
+ <div class="row">
+                          <div class="container">        
+                    <input type="button" value="SUBMIT" name="publish" id="publishbtn" class="submitcountry">    
+                    </div> 
+                    </div> 
+            </div>
+
+        
+    </section>
+    
+     <!--    footer  -->
+    <section class="footer">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-6 footer_content">
+                    <p>Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 footer_social text-right">
+                    <ul class="social-list">
+                        <li><a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

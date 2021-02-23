@@ -1,0 +1,15 @@
+ @media(min-width:992px)and(max-width:1199px){
+            .nav-link{
+                margin: 0;
+                font-size: 13px;
+                min-width: 100px;
+                background: red;
+            }
+        }
+@media(min-width:767px)and(max-width:991px){
+     .nav-link{
+                margin: 0;
+                font-size: 13px;
+         min-width: 100px;
+            }
+}

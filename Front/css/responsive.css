@@ -1,0 +1,93 @@
+@media(min-width:1200px){
+    #setwidth{
+         margin-top: 30px;
+        min-width:400px;
+        float: left; 
+    }
+    #ri{
+        float:right;
+    }
+    
+    
+}
+@media(min-width:992px) and (max-width:1199px){
+    #setwidth{
+         
+        min-width:400px;
+        float: left; 
+        margin-left: 100px;
+    }
+    #combook{
+        margin-left: 300px;
+        margin-bottom: 50px;
+    }
+    #ri{
+        float:right;
+    }
+    #textnote{
+        text-align: center;
+        margin-left: 350px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    
+     #setwidth{
+         
+        min-width:350px;
+        float: left; 
+       
+    }
+    #combook{
+        margin-left: 280px;
+        margin-bottom: 50px;
+    }
+    #ri{
+        float:right;
+    }
+    #textnote{
+        
+        margin-left: 340px;
+    }
+}
+@media(max-width:767px){
+    
+    #setwidth{
+        min-width:290px;
+        float: left; 
+       
+    }
+    #combook{
+       
+        margin-left: 280px;
+        margin-bottom: 50px;
+    }
+    #ri{
+        float:right;
+    }
+    #textnote{
+        
+        margin-left: 340px;
+    }
+}
+
+@media(max-width:576px){
+     #setwidth{
+        min-width:290px;
+         margin-top: 40px;
+        float: left; 
+       
+    }
+    #combook{
+       
+        margin-left: 280px;
+        margin-bottom: 50px;
+    }
+    #ri{
+        float:right;
+    }
+    #textnote{
+        
+        margin-left: 340px;
+    }
+}

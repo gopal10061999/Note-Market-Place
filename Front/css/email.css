@@ -1,0 +1,57 @@
+.forget-box{
+    width: 580px;
+    height: 360px;
+    background-color:white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}  
+.subbutt{
+    background-color: #6255a5;
+    width: 520px;
+    height: 45px;
+    border-radius: 3px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 10px;
+    text-align: center;
+   
+
+    
+}
+body{
+    margin: 0px;
+    padding: 0;
+    background: url(../banner-with-overlay.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+    font-family: sans-serif;
+    margin-bottom: -40px;
+   
+}
+#main-email{
+  margin-top: 40px;
+    color: #6255a5;
+    font-weight: 600;
+}
+#fir1{
+    font-weight: 550;
+    margin-bottom:8px;
+    font-size: 18px;
+}
+#sec2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 35px
+}
+#thr3{
+    margin-top: 0px;
+    margin-bottom: 35px;
+}

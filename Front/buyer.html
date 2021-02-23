@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Notes Market Place</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/addnote.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <style type="text/css">
+        .addad {
+            height: 40px;
+            padding: 0 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-weight: none;
+            margin-right: 0;
+            margin-left: -20px;
+        }
+
+        #addbtn {
+            border-radius: 3px;
+            color: #fff;
+            font-style: Open Sans;
+            font-size: 15px;
+            line-height: 18px;
+            background: #6255a5;
+
+        }
+
+        #serchba {
+            float: right;
+            margin-top: 30px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            height: 45px;
+            position: absolute;
+            float: right;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('images/search-icon.png');
+            background-position: 10px 9px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+
+        }
+        #imgcom{
+            min-width: 30px;
+        }
+
+        #myprotext {
+            margin-top: 30px;
+            margin-left: -20px;
+        }
+
+        #serbbtt {
+            position: relative;
+            float: right;
+            margin-left: 210px;
+        }
+
+        input[type=text]:focus {}
+
+        #inpuse {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        #allserch {
+            margin-left: -10px;
+            margin-bottom: -50px;
+
+        }
+
+        #serbbtt {
+
+            color: #fff;
+            background: #6255a5;
+            border: 1px solid #fff;
+        }
+        span{
+            text-align: center;
+        
+        }
+        #blue{
+            color:#6255a5;
+            text-align: center;
+        }
+
+        /**/
+
+.dropbtn {
+    background-color: #fff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+     margin-left: -25px;
+    margin-top: -100px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 15px;
+    background-color: #fff;
+    min-width: 220px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+        #co{
+            color:#6255a5;
+        }
+        #blue1{
+           color:#6255a5;
+        }
+        #clone{
+             color:#6255a5;
+        }
+
+       
+  @media(min-width:767px)and(max-width:992px) {
+            #serchba {
+                margin-left: 300px;
+                margin-right: 300px;
+
+
+            }
+      #serc {
+                margin-top: 100px;
+            }
+        }
+        
+        
+    @media(max-width: 576px) {
+            #serchba {
+                margin-left: 90px;
+                
+                margin-top: 20px;
+                
+            
+            }
+        #myprotext{
+            margin-left: -10px;
+        }
+       
+        #setselect{
+}
+        #addbtn{
+            text-align: center;
+           margin-left: 125px;
+            margin-top: px;
+        }
+        
+
+            .footer p {
+                text-align: center;
+
+            }
+        
+            .social-list {
+                
+                text-align: center;
+
+            }
+        }
+    @media(min-width:768px) and (max-width:992px){
+         #membertext{
+            margin-bottom: 0x;
+             margin-bottom: 0px;
+             
+        }
+        #serchba form{
+            margin-top: -10px;
+            margin-left: 100px;
+        }
+        #serchba {
+                margin-left: 
+                margin-top: 00px;
+                margin-top: 40px;
+                
+                float: left;
+            margin-left: -10px;
+            }
+        
+        #myprotext{
+            
+            margin-top: 50px;
+            margin-left: -30px;
+            }
+        
+        #allserch{
+        margin-left: -100px;
+            margin-right: -100px;
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+    }
+        @media(max-width:767px)  and (min-width:576px){
+            #myprotext{
+                margin-left: -80px;
+                margin-top: 100px;
+            }
+             #serchba {
+            margin-top: 100px;
+        }
+            #allserch{
+                margin-top: -50px;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light white-nav-top bg-white sticky-top" >
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="images/top-logo1.png" id="toplogo" style="width: 220px; height: 40px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate-top" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                   
+                  <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 550; min-width: 130px;
+                           color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           Search Notes
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-fade-up" href="" style="font-weight: 550;
+                          font-size: 13x;color: black; min-width: 148px;" >Sell Your Notes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 550;
+                         font-size: 13px;
+                          color: black; min-width: 137px;">Buyer Requests</a>
+                    </li>
+
+
+                   
+           
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weigh:550; font-size:13px; color: black;">
+                        FAQ
+                   </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 700;
+                          font-size: 13px;color: black; min-width: 101px;">Contact Us
+                   </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle " style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           <img src="images/user-img.png" id="addaus">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin1">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Update Profile</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Change Password</a>
+                            
+                            <a class="dropdown-item nav-link-fade-up" href="#" id="logout-dash">
+                            LOGOUT</a>
+                            
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="nav-item" id="bbttnn">
+                        <a href="#"><button type="button" class="btn btn-primary btn_login">Logout</button></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+
+   
+<section>
+        <div class="container">
+           
+            <div class="col-md-12 col-xl-12" id="allserch">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-8 col-xs- col-xl-9 col-sm-6" id="buttonse">
+                <h2 class="ba" id="myprotext" class="">
+                                 Buyer Requests
+                                </h2>
+                
+            </div>
+            <div class="col-md-4 col-xs-12 col-xl-3 col-sm-6" id="serchba">
+                <form class="form-inline my-2 my-lg-0" id="setsearch">
+                
+  <input type="text" name="search" placeholder="Search.." id="inpuse">
+
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="serbbtt" >Search</button>
+    </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!--table-->
+
+
+    <section class="dash-table table-responsive">
+        <div class="container">
+
+            <div class="row booktable">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 8%">SR NO.</th>
+                            <th scope="col" style="width: 13%">NOTE TITLE</th>
+                            <th scope="col" style="width: 8%">CATEGORY</th>
+                            <th scope="col" style="width: 20%">BUYER</th>
+                            <th scope="col" style="width: 15%">PHONE NO.</th>
+                            <th scope="col" style="width: 15%">SELL TYPE</th>
+                            <th scope="col" style="width: 10%">PRICE</th>
+                            <th scope="col" style="width: 30%">DOWNLOADED DATE/TIME</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                             <td id="date">1</td>
+                <td id="co">Data Science</td>
+                <td> Science</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Paid</td>
+                <td>$250</td>
+                <td>27 Nov 2020,11:24:34</td>
+                             <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                           
+                           
+                        </tr>
+
+                        <tr>
+                             <td id="date">2</td>
+                <td id="co">Accounts</td>
+                <td>Commerce</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Free</td>
+                <td>$0</td>
+                <td>27 Nov 2020,11:24:34</td>
+                            
+
+                          <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td id="date">3</td>
+                <td id="co">Social studies</td>
+                <td>Social</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>free</td>
+                <td>$0</td>
+                <td>27 Nov 2020,11:24:34</td>
+                            
+
+                          
+                          <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                            
+                        </tr>
+                        <tr>
+
+                          <td id="date">4</td>
+                <td id="co">AI</td>
+                <td>IT</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Paid</td>
+                <td>$158</td>
+                <td>27 Nov 2020,11:24:34</td>
+
+                            <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                            
+                        </tr>
+                        <tr>
+
+                           <td id="date">5</td>
+                <td id="co">Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Free</td>
+                <td>$0</td>
+                <td>27 Nov 2020,11:24:34</td>
+
+                           <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                            
+                        </tr>
+                        <tr>
+
+                           <td id="date">6</td>
+                <td id="co">Data Science</td>
+                <td>Science</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Paid</td>
+                <td>$555</td>
+                <td>27 Nov 2020,11:24:34</td>
+ <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                           
+                        </tr>
+                        <tr>
+
+                           <td id="date">7</td>
+                <td id="co">Accounts</td>
+                <td>Commerce</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Free</td>
+                <td>$0</td>
+                <td>27 Nov 2020,11:24:34</td>
+                         <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+
+                            
+                             <td id="date">8</td>
+                <td id="co">Social Studies</td>
+                <td>Social</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Free</td>
+                <td>$0</td>
+                <td>27 Nov 2020,11:24:34</td>
+  <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+
+                           <td id="date">9</td>
+                <td id="co">AI</td>
+                <td>IT</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Paid</td>
+                <td>$250</td>
+                <td>27 Nov 2020,11:24:34</td>
+                            
+                    
+                          <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                                
+
+                        </tr>
+                        <tr>
+                            <td id="date">10</td>
+                <td id="co">Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>testting123@gmail.com</td>
+                <td>+91 9874563527</td>
+                <td>Free</td>
+                <td>$0</td>
+                <td>27 Nov 2020,11:24:34</td>
+                          <td id="imgcom">
+
+                                <a href="#" class="eyeimg1"><img src="images/eye.png"></a>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Download Note</a>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="row justify-content-center">
+        <div class="content-box">
+            <ul class="pagination justify-content-center align-items-center">
+
+                <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+   <section class="footer">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-6 footer_content">
+                    <p>Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 footer_social text-right" id="version">
+                    <ul class="social-list">
+                        <li><a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+   <title>Notes Market Place</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Title -->
+    <title>Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootsharp/bootstrap.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/dashboard.css">
+    
+    <link rel="stylesheet" href="css/addnote.css">
+    
+    
+    
+     <link rel="stylesheet" href="css/dashboard.css">
+    
+    <style type="text/css">
+        
+        
+         #serchba {
+            float: right;
+            margin-top: 30px;
+             margin-bottom: 20px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            height: 45px;
+            position: absolute;
+            float: right;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('images/search-icon.png');
+            background-position: 10px 9px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+
+        }
+
+        #myprotext {
+            margin-top: 30px;
+            margin-left: -20px;
+             color: #6255a5;
+        }
+
+        #serbbtt {
+            position: relative;
+            float: right;
+            margin-left: 210px;
+        }
+
+        input[type=text]:focus {}
+
+        #inpuse {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        #allserch {
+            margin-left: -10px;
+            margin-bottom: -50px;
+
+        }
+
+        #serbbtt {
+
+            color: #fff;
+            background: #6255a5;
+            border: 1px solid #fff;
+        }
+        
+        
+        
+        @media(max-width:767px){
+            .sold{
+                margin-top: -25px;
+            }
+            
+             #myprotext{
+                font-size: 28px;
+                
+                    
+            }
+            
+            @media(max-width:767px){
+            
+            #version{
+                text-align: center;
+            }
+            #copyright{
+                text-align: center;
+                
+            }
+               
+            #serchba{
+                margin-left: -10px;
+                
+                
+            }
+            #addbtn{
+                text-align: center;
+               
+            }
+             
+              text-align: center;
+            }
+            #serchba{
+                text-align: center;
+            }
+            
+            
+        }
+        @media(max-width : 575px){
+         #serchba{
+       margin-left: -15px;
+                margin-top: 15px;
+             
+            }
+           input #addbtn{
+                text-align: center;
+               
+            }
+            #serchba{
+                text-align: center;
+               
+            }
+            #version{
+                text-align: center;
+            }
+             #copyright{
+                text-align: center;
+               
+            }
+             #buttonse{
+                text-align: center;
+            }
+            
+            
+            #setsearch{
+                text-align: center;
+                margin-left: 100px;
+            }
+            #searchba{
+                text-align: center;
+                margin-left: -100px;
+                margin-right: -100px;
+            }
+        
+        }
+        
+        @media(min-width:767px)and(max-width:991px){
+            #serchba{
+           margin-left: 300px;
+                margin-right: 300px;
+               
+                
+            }
+            #serc{
+margin-top: 100px;}
+        }
+        @media(min-width:992px) and (max-width:1199px){
+            #serchba{
+                margin-left: 100px;
+             margin-right: -100px;
+            }
+            
+        }
+            
+        
+    </style>
+
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light white-nav-top bg-white sticky-top" >
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="images/top-logo1.png" id="toplogo" style="width: 220px; height: 40px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate-top" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                   
+                  <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 550;
+                           color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           Search Notes
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-fade-up" href="" style="font-weight: 550;
+                          color: black; min-width: 148px;" >Sell Your Notes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 550;
+                          font-size: 13px;color: black; min-width: 137px;">Buyer Requests</a>
+                    </li>
+
+
+                   
+           
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weigh:550; font-size:13px; color: black;">
+                        FAQ
+                   </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 700;
+                          font-size: 13px;color: black; min-width: 101px;">Contact Us
+                   </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle " style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           <img src="../images/pre-login/images/user-img.png" id="addaus">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin1">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Update Profile</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Change Password</a>
+                            
+                            <a class="dropdown-item nav-link-fade-up" href="#" id="logout-dash">
+                            LOGOUT</a>
+                            
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="nav-item" id="bbttnn">
+                        <a href="#"><button type="button" class="btn btn-primary btn_login">Logout</button></a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+   
+
+   
+   
+    <section class="dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="mainheading col-md-6 col-sm-6">Dashboard</div>
+                <div class="btn-add col-md-6 col-sm-12">
+                    <button type="button" class="btn btn-primary add_note_btn">ADD Note</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="boxes col-md-12 col-xl-2 col-sm-12">
+                    <div class="earning-box">
+                        <div class="earning_img text-center">
+                            <img src="images/my-earning.png"><br>
+                            <span class="heading">My Earning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes col-md-12 col-xl-4 col-sm-12">
+                    <div class="sold-box">
+                        <div class="col-md-6 col-sm-6 sold">
+                            <span class="heading">100</span><br>
+                            <span class="sub-heading">Numbers of Notes Sold</span>
+                        </div>
+                        <div class="myearning">
+                            <span class="heading">$10,00,000</span><br>
+                            <span class="sub-heading">Money Earned</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes col-md-4 col-xl-2 col-sm-12">
+                    <div class="down-box">
+                        <span class="heading">38</span><br>
+                        <span class="sub-heading">My Downloads</span>
+                    </div>
+                </div>
+                <div class="boxes col-md-4 col-xl-2 col-sm-12">
+                    <div class="rej-box">
+                        <span class="heading">12</span><br>
+                        <span class="sub-heading">My Rejected Notes</span>
+                    </div>
+                </div>
+                <div class="boxes col-md-4 col-xl-2 col-sm-12">
+                    <div class="req-box">
+                        <span class="heading">102</span><br>
+                        <span class="sub-heading">Buyer Requests</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--   dashboard table 1  -->
+        
+        
+        
+       
+       
+       <section>
+        
+            <div class="col-md-12 col-xl-12" id="allserch">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-7 col-xs- col-xl-9 col-sm-6" id="buttonse">
+                  <h2 class="ba" id="myprotext" >
+                                    My Rejected Notes
+                                </h2>
+            </div>
+            <div class="col-md-5 col-xs-12 col-xl-3 col-sm-6" id="serchba">
+                <form class="form-inline my-2 my-lg-0" id="setsearch">
+                
+  <input type="text" name="search" placeholder="Search.." id="inpuse">
+
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="serbbtt" >Search</button>
+    </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+    
+        
+        
+        <section class="dash-table">
+            <div class="container">
+                
+                   
+                <div class="row booktable">
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 16%">Added date</th>
+                                <th scope="col" style="width: 38%">title</th>
+                                <th scope="col" style="width: 24%">category</th>
+                                <th scope="col" style="width: 15%">status</th>
+                                <th scope="col" style="width: 22%">actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09-10-2020</td>
+                                <td>Data Science</td>
+                                <td>Science</td>
+                                <td>Draft</td>
+                                <td>
+    
+                                    <a href="#" class="eyeimg"><img src="images/edit.png"></a>
+                                    <a href="#" class="eyeimg"><img src="images/delete.png"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10-10-2020</td>
+                                <td>Accounts</td>
+                                <td>Commerce</td>
+                                <td>In Review</td>
+                                <td><a href="#" class="eyeimg"><img src="images/eye.png" style="margin-left: 30px;"></a></td>
+                            </tr>
+                            <tr>
+                                <td>11-10-2020</td>
+                                <td>Social Studies</td>
+                                <td>Social</td>
+                                <td>Submitted</td>
+                                <td><a href="#" class="eyeimg"><img src="images/eye.png" style="margin-left: 30px;"></a></td>
+                            </tr>
+                            <tr>
+                                <td>12-10-2020</td>
+                                <td>AI</td>
+                                <td>IT</td>
+                                <td>Submitted</td>
+                                <td><a href="#" class="eyeimg"><img src="images/eye.png" style="margin-left:30px;"></a></td>
+                            </tr>
+                            <tr>
+                                <td>13-10-2020</td>
+                                <td>Lorem ipsum dolor sit ametsectetur</td>
+                                <td>Lorem</td>
+                                <td>Draft</td>
+                                <td>
+    
+                                    <a href="#" class="eyeimg"><img src="images/edit.png"></a>
+                                    <a href="#" class="eyeimg"><img src="images/delete.png" ></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    <!--    Pagination   -->
+    <div class="row justify-content-center">
+                    <div class="content-box">
+                        <ul class="pagination justify-content-center align-items-center">
+
+                            <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+    <!--   dashboard table 2  -->
+    
+    
+    <section>
+        
+            <div class="col-md-12 col-xl-12" id="allserch">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-7 col-xs- col-xl-9 col-sm-6" id="buttonse">
+                  <h2 class="ba" id="myprotext" style="font-size: 25px;">
+                                    Published Notes
+                                </h2>
+            </div>
+            <div class="col-md-5 col-xs-12 col-xl-3 col-sm-6" id="serchba">
+                <form class="form-inline my-2 my-lg-0" id="setsearch">
+                
+  <input type="text" name="search" placeholder="Search.." id="inpuse">
+
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="serbbtt" >Search</button>
+    </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+    
+    
+    <section class="dash-table">
+        <div class="container">
+            
+               
+                
+                  
+                
+          
+            <div class="row booktable">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 10%">Added date</th>
+                            <th scope="col" style="width: 30%">title</th>
+                            <th scope="col" style="width: 20%">category</th>
+                            <th scope="col" style="width: 20%">sell type</th>
+                            <th scope="col" style="width: 20%">price</th>
+                            <th scope="col" style="width: 20%">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09-10-2020</td>
+                            <td>Data Science</td>
+                            <td>Science</td>
+                            <td>Paid</td>
+                            <td>$575</td>
+                            <td><a href="#" class="eyeimg">
+                            <img src="images/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>10-10-2020</td>
+                            <td>Accounts</td>
+                            <td>Commerce</td>
+                            <td>Free</td>
+                            <td>$0</td>
+                            <td><a href="#" class="eyeimg"><img src="images/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>11-10-2020</td>
+                            <td>Social Studies</td>
+                            <td>Social</td>
+                            <td>Free</td>
+                            <td>$0</td>
+                            <td><a href="#" class="eyeimg"><img src="images/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>12-10-2020</td>
+                            <td>AI</td>
+                            <td>IT</td>
+                            <td>Paid</td>
+                            <td>$3542</td>
+                            <td><a href="#" class="eyeimg"><img src="images/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>13-10-2020</td>
+                            <td>Lorem ipsum dolor sit ametsectetur</td>
+                            <td>Lorem</td>
+                            <td>Free</td>
+                            <td>$0</td>
+                            <td><a href="#" class="eyeimg"><img src="images/eye.png"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--    Pagination   -->
+    <div class="row justify-content-center">
+                    <div class="content-box">
+                        <ul class="pagination justify-content-center align-items-center">
+
+                            <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--    footer  -->
+    <section class="footer">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-6 footer_content">
+                    <p>Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 footer_social text-right">
+                    <ul class="social-list">
+                        <li><a href="#">
+                               <img src="../images/pre-login/images/facebook.png" id="sefoimg">
+                            </a></li>
+                        <li><a href="#">
+                                <img src="../images/pre-login/images/twitter.png" id="sefoimg">
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-google-plus" id="sefoimg"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JQUERY JS-->
+    <script src="js/jquery.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="js/bootsharp/bootstrap.min.js"></script>
+    <!--Custom js-->
+    <script src="js/script.js"></script>
+    
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

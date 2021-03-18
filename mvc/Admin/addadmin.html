@@ -1,0 +1,407 @@
+<html>
+
+<head>
+    <title>
+        Notes Market Place
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
+    <link rel="stylesheet" href="css/bootsharp/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet" href="css/admindashboard.css">
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #fff;
+        }
+
+
+        .navbar {
+            border-bottom: 1px solid #BBBBBB;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #031D44;
+            padding: 20px 0px;
+            margin: 0px 5px;
+            display: inline-block;
+            position: relative;
+            opacity: 0.75;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+            color: #6255a5;
+        }
+
+        .navbar {
+            box-shadow: 5px 10px 8px lightgrey;
+        }
+
+
+        .nav-link::before {
+            transition: 300ms;
+            height: 5px;
+            content: "";
+            position: absolute;
+            background-color: blue;
+            color: #6255a5;
+        }
+
+        .nav-link-ltr::before {
+            width: 0%;
+            bottom: 10px;
+            color: #6255a5;
+        }
+
+        .nav-link-ltr:hover::before {
+            width: 100%;
+
+        }
+
+        #dropdimg {
+            margin-top: -10px;
+        }
+
+        .nav-link-fade-up::before {
+            width: 100%;
+            bottom: 5px;
+            opacity: 0;
+        }
+
+        .dropdown-menu {
+
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+
+        .nav-link-fade-up:hover::before {
+            bottom: 10px;
+            opacity: 1;
+        }
+
+        .nav-link-grow-up::before {
+            height: 0%;
+            width: 100%;
+            bottom: 0px;
+        }
+
+        .nav-link-grow-up:hover::before {
+            height: 5px;
+        }
+
+        /*login button*/
+        .navbar .btn_login {
+            width: 89px;
+            height: 40px;
+            color: #fff;
+            background-color: #6255a5;
+            border-radius: 5px;
+
+            font-family: Open Sans;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0;
+
+            border: none;
+            border: 1px solid #fff;
+        }
+
+        .navbar .btn_login:hover {
+            color: #fff;
+            background-color: #6255a5;
+            -webkit-transition: all .6s;
+            transition: all .6s;
+            border: 1px solid #6255a5;
+        }
+
+        .sticky-nav .navbar .btn_login {
+            width: 89px;
+            height: 30px;
+            color: #fff;
+            background-color: #6255a5;
+            border-radius: 3px;
+            font-family: Open Sans;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0;
+            margin: 0;
+            border: none;
+            border: 1px solid #6255a5;
+            m
+        }
+
+        .sticky-nav .navbar .btn_login:hover {
+            color: #6255a5;
+            background-color: #fff;
+            -webkit-transition: all .6s;
+            transition: all .6s;
+            border: 1px solid #6255a5;
+        }
+
+        #bbttnn {
+            margin-top: 10px;
+        }
+
+        .dropdown-toggle::after {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light white-nav-top bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="image/top-logo1.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate-top" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+
+
+                    <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dashboard
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Notes Under Review</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Publish Notes</a>
+
+                            <a class="dropdown-item nav-link-fade-up" href="#">Downloaded Notes</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Rejected Notes</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-fade-up" href="" style="font-weight: 600; color: black;">Notes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Members</a>
+                    </li>
+
+
+
+                    <!--      <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 700; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/pre-login/images/user-img.png" id="dropdimg">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Action</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Something else here</a>
+                        </div>
+                    </li>
+-->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Settings
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle " style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../images/pre-login/images/user-img.png" id="addaus">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin1">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Update Profile</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Change Password</a>
+
+                            <a class="dropdown-item nav-link-fade-up" href="#" id="logout-dash">
+                                LOGOUT</a>
+
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item" id="bbttnn">
+                        <a href="#"><button type="button" class="btn btn-primary btn_login">Login</button></a>
+                    </li>
+                </ul>
+                <!--   <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    -->
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="dash-table">
+        <div class="container">
+            <div class="row">
+                <div class="heading col-md-6">In Progress Notes</div>
+                <div class="search col-md-6">
+
+
+                </div>
+            </div>
+            <div class="row booktable">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 10%">SR NO.</th>
+                            <th scope="col" style="width: 14%">TITLE</th>
+                            <th scope="col" style="width: 10%">CATEGORY</th>
+                            <th scope="col" style="width: 18%">ATTACHMENT SIZE</th>
+                            <th scope="col" style="width: 13%">SELL TYPE</th>
+                            <th scope="col" style="width: 8%">PRICE</th>
+                            <th scope="col" style="width: 15%">PUBLISHER</th>
+                            <th scope="col" style="width: 10%">PUBLISHED DATE</th>
+                            <th scope="col" style="width: 10%">NUMBER OF<br>DOWNLOADS</th>
+                            <th scope="col" style="width: 8%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Data Science</td>
+                            <td>Science</td>
+                            <td>10kB</td>
+                            <td>Free</td>
+
+                            <td>$0</td>
+                            <td>Pritesh Panchal</td>
+                            <td>09-10-2020, 10:10</td>
+                            <td id="pric">10</td>
+
+                            <td>
+                                <div class="dropdown">
+                                    <img src="../images/pre-login/images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Accounts</td>
+                            <td>Commerce</td>
+                            <td>23MB</td>
+                            <td>Paid</td>
+
+                            <td>$22</td>
+                            <td>Rahil Shah</td>
+                            <td>10-10-2020, 12:30</td>
+                            <td id="pric">10</td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="../images/pre-login/images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Social Studies</td>
+                            <td>Social</td>
+                            <td>3MB</td>
+                            <td>Paid</td>
+
+                            <td>$56</td>
+                            <td>Anish Patel</td>
+                            <td>11-10-2020, 01:00</td>
+                            <td id="pric">10</td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="../images/pre-login/images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>AI</td>
+                            <td>IT</td>
+                            <td>1MB</td>
+                            <td>Free</td>
+
+                            <td>$0</td>
+                            <td>Vijay Vaishnav</td>
+                            <td>12-10-2020, 10:10</td>
+                            <td id="pric">34</td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="../images/pre-login/images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Lorem ipsum </td>
+                            <td>Lorem</td>
+                            <td>105kB</td>
+                            <td>Paid</td>
+
+                            <td>$90</td>
+                            <td>Mehul Patel</td>
+                            <td>13-10-2020, 10:10</td>
+                            <td id="pric">9</td>
+                            <td>
+                                <div class="dropdown">
+                                    <img src="../images/pre-login/images/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#home">Home</a>
+                                        <a href="#about">About</a>
+                                        <a href="#contact">Contact</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="dash-admin"></section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

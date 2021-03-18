@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Notes Market Place</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/addnote.css">
+    
+     <link rel="stylesheet" href="css/dashboard.css">
+    
+    <style type="text/css">
+        .addad{
+            height: 40px;
+           padding: 0 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-weight: none;
+            margin-right:0;
+            margin-left: -20px;
+        }
+        #addbtn{
+    border-radius: 3px;
+    color: #fff;
+    font-style: Open Sans;
+    font-size: 15px;
+    line-height: 18px;
+    background: #6255a5;
+    
+}
+        #serchba{
+            float: right;
+            margin-top: 30px;
+        }
+        
+        input[type=text] {
+  width: 200px;
+            height: 45px;
+            position: absolute;
+            float: right;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('image/search.jpg');
+  background-position: 10px 9px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+            
+}
+        #myprotext{
+            margin-top: 50px;
+        }
+        #serbbtt{
+position: relative;
+        float: right;
+        margin-left: 210px;}
+input[type=text]:focus {
+  
+}
+        #inpuse{
+height: 40px;
+        margin-right: 10px;}
+        #allserch{
+            margin-left:-10px;
+            margin-bottom: -70px;
+
+        }
+        #serbbtt{
+            
+            color: #fff;
+            background:#6255a5;
+            border: 1px solid #fff;
+        }
+        
+        #textri1{
+            color:blue;
+            margin-left: 80px;
+            
+            
+            
+            
+        }
+        
+        
+        
+
+.dropbtn {
+    background-color: #fff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   
+}
+        
+
+.dropdown-content {
+    display: none;
+     margin-left: -25px;
+    position: absolute;
+    right: 0;
+    margin-top: -90px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    overflow:visible;
+    min-width: 220px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    margin-bottom: -15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+
+        
+       
+        
+        #textri2{
+            color:blue;
+            margin-left: 80px;
+            
+            
+            
+        }
+        #textri3{
+            color:blue;
+            margin-left: 120px;
+            
+            
+        }
+        #textri4{
+            color:blue;
+            margin-left: 120px;
+            
+            
+        }
+        #textri5{
+            color:blue;
+            margin-left: 50px;
+            
+            
+        }
+        #textri6{
+            color:blue;
+            margin-left: 25px;
+            
+            
+        }
+        #setd{
+            color: blue;
+        }
+        #setd1{
+            color: blue;
+        }
+        .vl {
+  border-left: 1px solid gray;
+  height: 200px;
+            margin-top: 40px;
+            margin-left: -60px;
+        
+        
+        
+        @media(max-width:767px){
+            #serchba{
+       margin-left: -15px;
+                margin-top: -5px;
+            }
+        }
+        @media(min-width:767px)and(max-width:992px){
+            #serchba{
+           margin-left: 300px;
+                margin-right: 300px;
+               
+                
+            }
+             
+}
+            .vl{
+                color:red;
+            }
+            
+           
+            
+            
+            #serc{
+margin-top: 100px;
+        }
+            
+            
+            
+            @media(min-width:992px)and(max-width:1199px){
+                
+                *{
+                    backface-visibility: hidden;
+                }
+            }            
+        
+         @media(min-width:992px)and(max-width:1199px){
+           
+             #secondpart{   
+            
+    }
+              .vl {
+                      border-left: 1px solid green;
+                      height: 150px;
+                       margin-top: 40px;
+}
+                
+            }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light white-nav-top bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="image/logo.png" id="toplogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate-top" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                   
+                  
+                   <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle nav-link-fade-up" style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           Dashboard
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin" style="ap">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Notes Under Review</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Publish Notes</a>
+                            
+                            <a class="dropdown-item nav-link-fade-up" href="#">Downloaded Notes</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Rejected Notes</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-fade-up" href="" style="font-weight: 600; color: black;">Notes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Members</a>
+                    </li>
+
+
+                   
+           
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Reports
+                   </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-fade-up" href="#" style="font-weight: 600; color: black;">Settings
+                   </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown dropdown-container">
+                        <a class="nav-link dropdown-toggle " style="font-weight: 600; color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                           <img src="image/user-img.png" id="addaus">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropadmin1">
+                            <a class="dropdown-item nav-link-fade-up" href="#">Update Profile</a>
+                            <a class="dropdown-item nav-link-fade-up" href="#">Change Password</a>
+                            
+                            <a class="dropdown-item nav-link-fade-up" href="#" id="logout-dash">
+                            LOGOUT</a>
+                            
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="nav-item" id="bbttnn">
+                        <a href="#"><button type="button" class="btn btn-primary btn_login">Login</button></a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                <h2 class="ba" id="myprotext">
+                    Member Details
+                </h2>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    <section>
+        
+        <div class="container">
+        
+            <div class="row">
+    <div class="col-sm-12 col-md-8 col-xl-6 col-xs-12" style="background-color:re;">
+    <div class="row">
+    
+    <div class="col-md-3 col-sm-12 col-xs-12 col-xl-4" id="imgsss" >
+        
+    <img src="image/t4.jpg" style="height: 130px; width: 140px;
+                    margin-top: 30px; margin-bottom: 30px;" id="imgsss1">
+        
+    </div>
+    <div class="col-md-9 col-sm-12 col-xs-12 col-xl-8" sty>
+       
+       <table style="margin-top: 25px;" id="tableborder">
+           
+           <tr>
+               <td>First Name:</td>
+               <td id="setd">Richard</td>
+           </tr>
+           <tr>
+               <td>Last Name:</td>
+               <td id="setd">Brown</td>
+           </tr>
+           <tr>
+               <td>Email:</td>
+               <td id="setd">richardbrown77<span>@gmail.com</td>
+           </tr>
+           <tr>
+               <td>DOB:</td>
+               <td id="setd">13-08-1990</td>
+           </tr>
+            <tr>
+               <td>Phone Number:</td>
+               <td id="setd">9988731221</td>
+           </tr>
+           <tr>
+               <td>College/University:</td>
+               <td id="setd">University of California</td>
+           </tr>
+           
+       </table>
+       
+                   </div>
+        
+        </div>
+   
+   </div>
+    
+   <div class=" col-md-0 col-xl-0 col-sm-0 col-xs-0 vl" style="height: 130px;  color:gray; width: 1px solid gray;"></div>
+    
+    <div class="col-sm-12 col-md-4 col-xs-12 col-xl-5" style="margin-right; " id="secondpart">
+    
+   
+    
+    <table style="margin-top: 25px;">
+           
+           <tr>
+               <td>Address 1:</td>
+               <td id="setd1">144-Diamond Height</td>
+           </tr>
+           <tr>
+               <td>Address 2:</td>
+               <td id="setd1">Star Colony</td>
+           </tr>
+           <tr>
+               <td>City:</td>
+               <td id="setd1">New York</td>
+           </tr>
+           <tr>
+               <td>State:</td>
+               <td id="setd1">New York State</td>
+           </tr>
+            <tr>
+               <td>Country:</td>
+               <td id="setd1">United State</td>
+           </tr>
+           <tr>
+               <td>Zip Code:</td>
+               <td id="setd1">11004-05</td>
+           </tr>
+           
+       </table>
+       </div>
+       
+       </div>
+ 
+ </div>
+ 
+        
+    </section>
+    
+     <div class="container">
+     <hr>
+    </div>
+    
+    
+    
+    <!--table-->
+
+    
+        <section class="dash-table table-responsive">
+            <div class="container">
+               <div class="row">
+                   <h3 style="color:blue;">Notes</h3>
+               </div>
+                <div class="row booktable">
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 8%">SR NO.</th>
+                                <th scope="col" style="width: 13%">NOTE TITLE</th>
+                                <th scope="col" style="width: 8%">CATEGORY</th>
+                                <th scope="col" style="width: 8%">STATUS</th>
+                                <th scope="col" style="width: 17%">DOWNLOAD NOTES</th>
+                                <th scope="col" style="width: 17%">TOTAL EARNING</th>
+                               
+                                <th scope="col" style="width: 14%">DATE ADDED</th>
+                                
+                                
+                                <th scope="col" style="width: 18%">PUBLISHED DATE</th>
+                                <th style="width: 12px;"></th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Software Development</td>
+                                <td>IT</td>
+                                
+                                
+                                <td>Published</td>
+                               
+                                <td id="setmiddle">22</td>
+                                <td id="setmiddle">$177</td>
+                                <td>
+                                   09-10-2020,10:10
+                                </td>
+                                <td>09-10-2020,10:10</td>
+                                 <td>
+
+                                <div class="dropdown">
+                        <img src="image/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+                        
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="downloadadmin.html">Download Notes</a>
+                           
+                           
+                            
+                        </div>
+                                </div>
+                            </td>
+                            </tr>
+                                                        <tr>
+                                <td>2</td>
+                                <td>Computer Basic</td>
+                                <td>computer</td>
+                                
+                                
+                                <td>Published</td>
+                               
+                                <td id="setmiddle">4</td>
+                                <td id="setmiddle">$125</td>
+                                <td>
+                                   09-10-2020,10:10
+                                </td>
+                                <td>09-10-2020,10:10</td>
+                                <td>
+
+                                <div class="dropdown">
+                        <img src="image/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+                        
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="downloadadmin.html">Download Notes</a>
+                           
+                           
+                            
+                        </div>
+                                </div>
+                            </td>
+                                <td></td>
+                            </tr>
+
+                                                             <tr>
+                                <td>2</td>
+                                <td>Human Body</td>
+                                <td>Science</td>
+                                
+                                
+                                <td>Inreview</td>
+                               
+                                <td id="setmiddle">17</td>
+                                <td id="setmiddle">$978</td>
+                                <td>
+                                   11-10-2020,01:00
+                                </td>
+                                <td>11-10-2020,01:00</td>
+                                <td>
+
+                                <div class="dropdown">
+                        <img src="image/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+                        
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="downloadadmin.html">Download Notes</a>
+                           
+                           
+                            
+                        </div>
+                                </div>
+                            </td>
+                                <td></td>
+                            </tr>
+
+                                                        <tr>
+                                <td>4</td>
+                                <td>World War</td>
+                                <td>History</td>
+                                
+                                
+                                <td>Published</td>
+                               
+                                <td id="setmiddle">28</td>
+                                <td id="setmiddle">$15254</td>
+                                <td>
+                                   12-10-2020,10:10
+                                </td>
+                                <td>12-10-2020,10:10</td>
+                                <td>
+
+                                <div class="dropdown">
+                        <img src="image/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+                        
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="downloadadmin.html">Download Notes</a>
+                           
+                           
+                            
+                        </div>
+                                </div>
+                            </td>
+                                <td></td>
+                            </tr>
+
+                                                        <tr>
+                                <td>5</td>
+                                <td>Accounting</td>
+                                <td>Account</td>
+                                
+                                
+                                <td>Published</td>
+                               
+                                <td id="setmiddle">0</td>
+                                <td id="setmiddle">$60</td>
+                                <td>
+                                   13-10-2020,10:25
+                                </td>
+                                <td>NA</td>
+                                <td>
+
+                                <div class="dropdown">
+                        <img src="image/dots.png" id="dot" class="dropbtn" onclick="myFunction()">
+                        
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="downloadadmin.html">Download Notes</a>
+                           
+                           
+                            
+                        </div>
+                                </div>
+                            </td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>    
+    
+    <!-- Pagination -->
+                <div class="row justify-content-center">
+                    <div class="content-box">
+                        <ul class="pagination justify-content-center align-items-center">
+
+                            <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+                  <!--    footer  -->
+   <hr id="fote">
+  <section class="footer">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-6 footer_content">
+                    <p id="version">Version:1.1.24</p>
+                </div>
+                <div class="col-md-6 footer_social text-right">
+                    <p id="copyright">Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+
+
+
+    
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
